@@ -22,14 +22,14 @@ int main()
 {
   int arr[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
   int k = 18;
-  int count = sizeof(arr) / sizeof(arr[0]);
+  int count = sizeof(arr) / sizeof(arr[0]);//计算较长数组的元素个数
 
-  int left = 0;
-  int right = count - 1;
+  int left = 0;//左区间
+  int right = count - 1;//右区间
 
   while(left <= right)
   {
-     int mid = (left + right) / 2;
+     int mid = (left + right) / 2;//二分
 
       if(arr[mid] < k)
       {
@@ -42,10 +42,10 @@ int main()
       else
       {
           printf("找到了，下标为：%d\n",mid);
-          break;
+          break;//找到跳出循环
       }
   }
-  if(left > right)
+  if(left > right)//找不到
      {
          printf("不存在");
      }
