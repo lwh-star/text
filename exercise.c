@@ -7,7 +7,7 @@
     char arr1[20] = "hello JXUFE";
     char arr2[20] = {0};
 
-    strcpy(arr2,arr1);//将数值arr2的元素赋给arr1
+    strcpy(arr2,arr1);//将数组arr1的元素赋给arr2
     printf("%s\n",arr2);
     return 0;
 }*/
